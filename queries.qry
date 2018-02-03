@@ -1,0 +1,31 @@
+
+query selectGames {
+    description: "Select all Games"
+    statement:
+        SELECT org.acme.trading.Game
+}
+
+query selectGamesByOwner {
+    description: "Select all Games based on their owner"
+    statement:
+        SELECT org.acme.trading.Game
+    WHERE (owner == _$owner)
+}
+
+/*
+
+query selectGamesWithHighQuantity {
+    description: "Select Games based on quantity"
+    statement:
+        SELECT org.acme.trading.Game
+    WHERE (quantity > 60)
+}
+
+query selectGamesByExchange {
+    description: "Select all Games based on their main exchange"
+    statement:
+        SELECT org.acme.trading.Game
+    WHERE (mainExchange==_$exchange)
+}
+
+*/
