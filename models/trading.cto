@@ -27,10 +27,15 @@ event TradeNotification {
     --> Game game
 }
 
+/*
+event AddGameKey {
+ 	--> Game game 
+}
+*/
+
 transaction RemoveHighQuantityGames {
 }
 
 event RemoveNotification {
     --> Game game
 }
-
