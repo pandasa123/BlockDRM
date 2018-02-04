@@ -22,3 +22,4 @@ class GenerateUser(object):
         print("request sent to:\n" + url)
         print("json data:")
         print(json)
+        
