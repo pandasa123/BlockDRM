@@ -1,0 +1,3 @@
+[console_scripts]
+blockdrm = blockdrm.__main__:main
+
